@@ -12,6 +12,7 @@ import coil.compose.AsyncImage
 
 @Composable
 fun NASAImageDetailScreen(
+    // nullable ?
     id: String?,
     viewModel: NASAImageSearchViewModel,
     modifier: Modifier = Modifier,

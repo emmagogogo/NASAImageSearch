@@ -19,11 +19,19 @@
         -  The Navigation Compose can be used you can use to define <br> and handle navigation within your Jetpack Compose-based Android application.
         -  Declarative navigation simplifies the navigation setup and maintenance
 
+    5. Kotlin coroutine
+        - For asynchronous, non-blocking call
+        - Simplify the development of asynchronous tasks, concurrent operations, and reactive programming. 
+
+    6. Coil Compose library
+        - Coil is a fast and lightweight image loading library 
+
 ## An Overview of how your app is architected?
 
     - I followed the MVVM pattern
 
     - Model: The **NASAImage.kt** class represents the model in my app. <br> It encapsulates the data and properties of a NASA image retrieved from the API.
+
     - View: The **NASAImageDetailScreen.kt** and **NASAImageSearchScreen.kt** are the Composable screens <br >that handle the UI logic and present the visual representation of the data to the user.
 
     - ViewModel: The **NASAImageSearchViewModel.kt** acts as the ViewModel. It contains the business logic, manages the state of the UI, and interacts <br> with the **NASAApiService** to fetch the search results. <br> The ViewModel exposes the necessary data and methods to the View for display and user interaction.
@@ -31,7 +39,7 @@
 ## How to build /run your app?
 
     1.  Start Android Studio.
-    2. In the Welcome to Android Studio window, click Open.
+    2.  In the Welcome to Android Studio window, click Open.
     3.  In the file browser, navigate to where the unzipped project folder is located (likely in your Downloads folder).
     4.  Double-click on that project folder.
     5.  Wait for Android Studio to open the project.
@@ -41,7 +49,12 @@
 
     - I didn't do the paging. Instead, I used LazyColumn in Jetpack Compose to make when user scrolls through the list, it dynamically adds and removes items, which helps in managing memory efficiently, especially when dealing with large datasets.
 
-    - I followed some codelab tutorials to do this android app. They are very useful.
+    - This was my first time to do the Android app.
+    - I followed some codelab tutorials to do this android app. They are quite useful.
         - [1](https://developer.android.com/courses/android-basics-compose/unit-1)
-        - [2](https://developer.android.com/courses/android-basics-compose/course)
+        - [2](https://demarveloper.android.com/courses/android-basics-compose/course)
         - [3](https://developer.android.com/codelabs/basic-android-kotlin-training-getting-data-internet#0)
+        - [4](https://www.youtube.com/watch?v=6w4l-3jC21E&t=722s)
+
+    - I don't have enough time to do the test for it. 
+     

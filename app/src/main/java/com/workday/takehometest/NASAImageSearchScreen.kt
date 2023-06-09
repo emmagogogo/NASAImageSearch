@@ -72,6 +72,7 @@ fun NASAImageSearchScreen(
             when (status.value) {
                 NASAImageApiStatus.LOADING -> CircularProgressIndicator()
                 NASAImageApiStatus.ERROR -> Text("Error, try search again")
+                NASAImageApiStatus.EMPTY -> Text("Did not find anything")
                 NASAImageApiStatus.DONE -> {
                     LazyColumn(
                         verticalArrangement = Arrangement.spacedBy(8.dp),
